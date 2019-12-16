@@ -21,7 +21,7 @@
                                 </div>
 
                                 <div>
-                                    <input type="text" name="customer_password" placeholder="Enter Your Password">
+                                    <input type="password" name="customer_password" placeholder="Enter Your Password">
 
                                 </div>
 
@@ -34,7 +34,7 @@
                             </td>
                             <td>
                                 <div>
-                                    <input type="text" name="customer_email" placeholder="Enter Your Email">
+                                    <input type="email" name="customer_email" placeholder="Enter Your Email">
                                 </div>
                                         
 
@@ -43,13 +43,8 @@
                                 </div>
                                 
                                 <div>
-                                    <select id="country" name="customer_country" class="frm-field required">
-                                        <option value="null">Select a Country</option>         
-                                        <option value="Afghanistan">Afghanistan</option>
-                                        <option value="Bangladesh">Bangladesh</option>
-                                        <option value="Pakistan">Pakistan</option>
-                                        <option value="India">India</option>
-
+                                    <select id="country" name="customer_country" class="frm-field required" readonly>
+                                        <option value="Philippines" selected>Philippines</option>
                                     </select>
                                 </div>		
 
