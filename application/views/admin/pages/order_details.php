@@ -98,15 +98,15 @@
                                 <td><?php echo $i; ?></td>
                                 <td><?php echo $single_order_details->product_name ?></td>
                                 <td><img src="<?php echo base_url('uploads/'.$single_order_details->product_image);?>" style="width:200px;height:100px"/></td>
-                                <td><?php echo $this->cart->format_number($single_order_details->product_price)?> Tk</td>
+                                <td><?php echo $this->cart->format_number($single_order_details->product_price)?> Pesos</td>
                                 <td><?php echo $single_order_details->product_sales_quantity ?></td>
-                                <td><?php echo $this->cart->format_number($single_order_details->product_price * $single_order_details->product_sales_quantity) ?> Tk</td>
+                                <td><?php echo $this->cart->format_number($single_order_details->product_price * $single_order_details->product_sales_quantity) ?> Pesos</td>
                             </tr>
                         <?php } ?>
                     </tbody>
                     <tfooter>
                         <td colspan="5">Total Amount</td>
-                        <td>= <?php echo $this->cart->format_number($order_info->order_total)?> Tk</td>
+                        <td>= <?php echo $this->cart->format_number($order_info->order_total)?> Pesos</td>
                     </tfooter>
                 </table>            
             </div>

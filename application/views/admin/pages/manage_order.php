@@ -53,7 +53,7 @@
                             <td><?php echo $single_order->customer_name?></td>
                             <td><?php echo $single_order->customer_phone?></td>
                             <td><?php echo $single_order->customer_email?></td>
-                            <td><?php echo $this->cart->format_number($single_order->order_total)?> Tk</td>
+                            <td><?php echo $this->cart->format_number($single_order->order_total)?> Pesos</td>
                             <td>
                                 <a class="btn btn-warning"><?php echo $single_order->actions?></a>
                                 <a class="btn btn-danger" href="<?php echo base_url('order/details/'.$single_order->order_id);?>">View</a>

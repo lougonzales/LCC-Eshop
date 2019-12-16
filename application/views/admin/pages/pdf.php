@@ -86,7 +86,7 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>= <?php echo $order_info->order_total ?> Tk</td>
+                    <td>= <?php echo $order_info->order_total ?> Pesos</td>
                     </tfoot>
                 </table>
             </div>
