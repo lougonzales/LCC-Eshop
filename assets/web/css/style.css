@@ -75,10 +75,10 @@ body{
     padding:10px 15px;
     height: 36px;
     margin:0;
-    background: -webkit-gradient(linear,left top,left bottom,from(#70389C),to(#602D8D));
-    background: -moz-linear-gradient(top,#70389C,#602D8D);
-    background: -o-linear-gradient(top,#70389C,#602D8D);
-    background: -ms-linear-gradient(top,#70389C,#602D8D);
+    background: -webkit-gradient(linear,left top,left bottom,from(#ff2400),to(#d41e00));
+    background: -moz-linear-gradient(top,#ff2400,#d41e00);
+    background: -o-linear-gradient(top,#ff2400,#d41e00);
+    background: -ms-linear-gradient(top,#ff2400,#d41e00);
     -webkit-transition: all .9s;
     -moz-transition: all .9s;
     -o-transition: all .9s;
@@ -142,7 +142,7 @@ input[type="number"] {
     padding: 7px;
 }
 .buysubmit{
-    background: #602d8d url("../images/large-button-overlay.png") repeat scroll 0 0;
+    background: #d41e00 url("../images/large-button-overlay.png") repeat scroll 0 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     color: #fff;
@@ -158,7 +158,7 @@ input[type="number"] {
     max-height: 400px;
     width: 95px;
     z-index: 1;
-    background: #70389C;
+    background: #ff2400;
 }
 .login {
     background: rgba(0, 0, 0, 0) url("../images/gradient_light-1.png") repeat-x scroll 0 0;
@@ -254,7 +254,7 @@ p.terms{
 }
 p.terms a,p.note a{
     text-decoration:underline;
-    color:#7C2DC5;
+    color:#ff2400;
 }
 p.terms a:hover,p.note a:hover{
     text-decoration:none;
@@ -405,14 +405,14 @@ button.grey:hover,.search button.grey:hover{
     max-height: 400px;
     width:95px;
     z-index:1;
-    background:#70389C;
+    background:#ff2400;
 }
 .wrapper-dropdown.active .languges{
     border-bottom: 1px solid rgba(0,0,0,0.2);
     max-height: 400px;
     width:135px;
     z-index:11;
-    background:#70389C;
+    background:#ff2400;
 }
 .header_bottom{margin-bottom:10px;}
 /**** Header Botttom Left ****/
@@ -508,7 +508,7 @@ button.grey:hover,.search button.grey:hover{
     font-size:0.8em;
     font-family: Arial, "Helvetica Neue", "Helvetica", Tahoma, Verdana, sans-serif;
     border: 1px solid rgba(0,0,0,0.1);
-    background:#602D8D url(../images/large-button-overlay.png);       
+    background:#d41e00 url(../images/large-button-overlay.png);       
     color             : #fff;
     text-shadow:0 -1px 1px rgba(0, 0, 0, 0.25);
     -moz-border-radius:5px;
@@ -516,8 +516,8 @@ button.grey:hover,.search button.grey:hover{
     border-radius:5px;
 }
 .list_2_of_1 .button a:hover{
-    border: 1px solid #4D00A0;
-    background:#70389C;
+    border: 1px solid #ff3614;
+    background:#ff2400;
     text-decoration:none; 
 }
 .header_bottom_right_images{
@@ -553,7 +553,7 @@ button.grey:hover,.search button.grey:hover{
 .heading h3{
     font-family: 'Monda', sans-serif;
     font-size:22px;
-    color:#602D8D;
+    color:#d41e00;
     text-transform:uppercase;
 }
 .sort,.show{
@@ -597,7 +597,7 @@ button.grey:hover,.search button.grey:hover{
     padding:5px 5px;
 }
 .page-no li a:hover,.page-no li.active{
-    color:#602D8D;
+    color:#d41e00;
     text-decoration:underline;
 }
 /**** Grid 1_0f_4 ****/
@@ -689,7 +689,7 @@ button.grey:hover,.search button.grey:hover{
     transition: all 0.5s ease;
 }
 .images_1_of_4 .button a:hover{
-    color:#70389C;
+    color:#ff2400;
     background: #E8E8E8;
 }
 .images_1_of_4 .button span img{
@@ -874,7 +874,7 @@ button.grey:hover,.search button.grey:hover{
     color: #333;
 }
 .back-links p a:hover,.back-links p a:active{
-    color:#70389C;
+    color:#ff2400;
 }
 .image {
     clear: both;
@@ -1016,7 +1016,7 @@ button.grey:hover,.search button.grey:hover{
 }
 .product-desc h2,.product-tags h2{
     padding:8px 20px;
-    background:#602D8D;
+    background:#d41e00;
     border: 1px solid #EBE8E8;
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -1108,7 +1108,7 @@ button.grey:hover,.search button.grey:hover{
 }
 .span_3_of_1 li a:hover{
     background: url(../images/drop_arrow-hover.png) no-repeat 5px 11px;
-    color:#602D8D; 
+    color:#d41e00; 
 }
 .span_3_of_2 .button{
     float:right;
@@ -1252,7 +1252,7 @@ button.grey:hover,.search button.grey:hover{
     width:15%;
 }
 .year p{
-    color:#70389C;
+    color:#ff2400;
     font-size:0.95em;
 }
 .span_1_of_3  p.history{
@@ -1265,7 +1265,7 @@ button.grey:hover,.search button.grey:hover{
 .span_1_of_3 .list li a{
     font-size:0.82em;
     padding:0.35em 1.2em;
-    color:#602D8D;
+    color:#d41e00;
     background: url(../images/drop_arrow-hover.png) no-repeat 0px 10px;
     display:block;
 }
@@ -1308,7 +1308,7 @@ button.grey:hover,.search button.grey:hover{
     margin:20px 0 10px 0;
 }
 .questions h4{
-    color:#70389C;
+    color:#ff2400;
     font-size: 15px;
     margin-bottom:5px;
     font-weight: normal;
@@ -2489,4 +2489,4 @@ table.tblone img {
     cursor: pointer;
 }
 
-html body li.active a{background: #542878;border-left: 0px !important;}
+html body li.active a{background: #ff2400;border-left: 0px !important;}
