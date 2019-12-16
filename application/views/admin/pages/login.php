@@ -34,7 +34,7 @@
         <![endif]-->
 
         <!-- start: Favicon -->
-        <link rel="shortcut icon" href="<?php echo base_url()?>assets/admin/img/favicon.jpg">
+        <link rel="shortcut icon" href="<?php echo base_url()?>assets/lcc/favicon.ico">
         <!-- end: Favicon -->
 
         <style type="text/css">
