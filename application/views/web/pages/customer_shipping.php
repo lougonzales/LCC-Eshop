@@ -42,13 +42,8 @@
                                 </div>
                                 
                                 <div>
-                                    <select id="country" name="shipping_country" class="frm-field required">
-                                        <option value="null">Select a Country</option>         
-                                        <option value="Afghanistan">Afghanistan</option>
-                                        <option value="Bangladesh">Bangladesh</option>
-                                        <option value="Pakistan">Pakistan</option>
-                                        <option value="India">India</option>
-
+                                    <select id="country" name="shipping_country" class="frm-field required" readonly>
+                                        <option value="Philippines" selected>Philippines</option>
                                     </select>
                                 </div>		
 
