@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 16, 2019 at 01:51 PM
+-- Generation Time: Dec 16, 2019 at 02:36 PM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -94,7 +94,8 @@ INSERT INTO `tbl_customer` (`customer_id`, `customer_name`, `customer_email`, `c
 (5, 'Rostom Ali4', 'rostomali4@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'Comilla,Bangladesh', 'Comilla', '0152698', '014795', 'Bangladesh', 0),
 (6, 'Rostom Ali', 'rostomali@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'Comilla,Bangladesh', 'Comilla', '0152698', '014795', 'Bangladesh', 0),
 (7, 'Rostom Ali3', 'rostomali444@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'Comilla,Bangladesh', 'Comilla', '0152698', '014795', 'Bangladesh', 0),
-(8, 'Rostom Ali', 'rostomali44445@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'Comilla,Bangladesh', 'Comilla', '0152698', '014795', 'Pakistan', 0);
+(8, 'Rostom Ali', 'rostomali44445@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 'Comilla,Bangladesh', 'Comilla', '0152698', '014795', 'Pakistan', 0),
+(9, 'Juan Carlo Valencia', 'carlo.valencia066@gmail.com', '5d10c6500e6ce852bf6142eb0b77f447', '#61 San Francisco st. Karuhatan, Valenzuela City', 'Valenzuela City', '1441', '09067045429', 'Philippines', 1);
 
 -- --------------------------------------------------------
 
@@ -152,7 +153,8 @@ CREATE TABLE `tbl_order` (
 INSERT INTO `tbl_order` (`order_id`, `customer_id`, `shipping_id`, `payment_id`, `order_total`, `actions`) VALUES
 (2, 4, 7, 8, 11500, 'Pending'),
 (3, 4, 8, 9, 81075, 'Pending'),
-(8, 4, 9, 14, 402500, 'Pending');
+(8, 4, 9, 14, 402500, 'Pending'),
+(9, 9, 10, 15, 11500, 'Pending');
 
 -- --------------------------------------------------------
 
@@ -179,7 +181,8 @@ INSERT INTO `tbl_order_details` (`order_details_id`, `order_id`, `product_id`, `
 (2, 3, 5, 'Product Five', 10000, 4, NULL),
 (3, 3, 3, 'Product Three', 3500, 3, NULL),
 (4, 3, 1, 'Product One', 20000, 1, NULL),
-(5, 8, 4, 'Product Four', 350000, 1, 'pic3.jpg');
+(5, 8, 4, 'Product Four', 350000, 1, 'pic3.jpg'),
+(6, 9, 5, 'Product Five', 10000, 1, 'preview-img.jpg');
 
 -- --------------------------------------------------------
 
@@ -211,7 +214,8 @@ INSERT INTO `tbl_payment` (`payment_id`, `payment_type`, `actions`) VALUES
 (11, 'cashon', 'pending'),
 (12, 'cashon', 'pending'),
 (13, 'cashon', 'pending'),
-(14, 'cashon', 'pending');
+(14, 'cashon', 'pending'),
+(15, 'cashon', 'pending');
 
 -- --------------------------------------------------------
 
@@ -276,7 +280,8 @@ INSERT INTO `tbl_shipping` (`shipping_id`, `customer_id`, `shipping_name`, `ship
 (6, 4, 'Amjad Hossain', 'amjad62@gmail.com', 'bangladesh', 'comilla', 'Afghanistan', '555', '555'),
 (7, 4, 'Amjad Hossain', 'amjad23@gmail.com', 'bangladesh', 'comilla', 'Afghanistan', '555', '555'),
 (8, 4, 'Amjad Hossain', 'amjad233@gmail.com', 'bangladesh', 'comilla', 'Bangladesh', '555', '555'),
-(9, 0, 'Rostom', 'rostom@gmail.com', 'bangladesh', 'comilla', 'Bangladesh', '555', '555');
+(9, 0, 'Rostom', 'rostom@gmail.com', 'bangladesh', 'comilla', 'Bangladesh', '555', '555'),
+(10, 0, 'Jc', 'carlo.valencia066@gmail.com', '#61 San Francisco St., Karuhatan, Valenzuela City', 'Valenzuela City', 'Philippines', '09067045429', '1441');
 
 -- --------------------------------------------------------
 
@@ -442,7 +447,7 @@ ALTER TABLE `tbl_category`
 -- AUTO_INCREMENT for table `tbl_customer`
 --
 ALTER TABLE `tbl_customer`
-  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `customer_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbl_option`
@@ -454,19 +459,19 @@ ALTER TABLE `tbl_option`
 -- AUTO_INCREMENT for table `tbl_order`
 --
 ALTER TABLE `tbl_order`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbl_order_details`
 --
 ALTER TABLE `tbl_order_details`
-  MODIFY `order_details_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `order_details_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tbl_payment`
 --
 ALTER TABLE `tbl_payment`
-  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `tbl_product`
@@ -478,7 +483,7 @@ ALTER TABLE `tbl_product`
 -- AUTO_INCREMENT for table `tbl_shipping`
 --
 ALTER TABLE `tbl_shipping`
-  MODIFY `shipping_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `shipping_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tbl_slider`
