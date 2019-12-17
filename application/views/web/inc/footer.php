@@ -6,41 +6,26 @@
             <div class="col_1_of_4 span_1_of_4">
                 <h4>Information</h4>
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Customer Service</a></li>
-                    <li><a href="#"><span>Advanced Search</span></a></li>
-                    <li><a href="#">Orders and Returns</a></li>
-                    <li><a href="#"><span>Contact Us</span></a></li>
-                </ul>
-            </div>
-            <div class="col_1_of_4 span_1_of_4">
-                <h4>Why buy from us</h4>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="faq.html">Customer Service</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="contact.html"><span>Site Map</span></a></li>
-                    <li><a href="preview.html"><span>Search Terms</span></a></li>
+                    <li><a href="<?= base_url('contact')?>"><span>Contact Us</span></a></li>
                 </ul>
             </div>
             <div class="col_1_of_4 span_1_of_4">
                 <h4>My account</h4>
                 <ul>
-                    <li><a href="contact.html">Sign In</a></li>
-                    <li><a href="index.html">View Cart</a></li>
-                    <li><a href="#">My Wishlist</a></li>
-                    <li><a href="#">Track My Order</a></li>
-                    <li><a href="faq.html">Help</a></li>
+                    <li><a href="<?= base_url('customer/login')?>">Sign In</a></li>
+                    <li><a href="<?= base_url('cart')?>">View Cart</a></li>
                 </ul>
             </div>
             <div class="col_1_of_4 span_1_of_4">
                 <h4>Contact</h4>
-                <ul>
-                    <li><span><?php echo get_option('site_contact_num1');?></span></li>
-                    <li><span><?php echo get_option('site_contact_num2');?></span></li>
-                </ul>
+                <div style="color: #979797;">
+                    <span><?php echo get_option('site_contact_num1');?></span> <br/>
+                    <span><?php echo get_option('site_contact_num2');?></span>
+                </div>
+            </div>
+            <div class="col_1_of_4 span_1_of_4">
+                <h4>Follow Us</h4>
                 <div class="social-icons">
-                    <h4>Follow Us</h4>
                     <ul>
                         <li class="facebook"><a href="<?php echo get_option('site_facebook_link');?>" target="_blank"> </a></li>
                         <li class="twitter"><a href="<?php echo get_option('site_twitter_link');?>" target="_blank"> </a></li>
@@ -50,6 +35,7 @@
                     </ul>
                 </div>
             </div>
+
         </div>
         <div class="copy_right">
             <p><b><?php echo get_option('site_copyright');?></b></p>
