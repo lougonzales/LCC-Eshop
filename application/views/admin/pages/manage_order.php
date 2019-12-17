@@ -16,9 +16,9 @@
             <div class="box-header" data-original-title>
                 <h2><i class="halflings-icon user"></i><span class="break"></span>Manage Product</h2>
                 <div class="box-icon">
-                    <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
+                    <!-- <a href="#" class="btn-setting"><i class="halflings-icon wrench"></i></a>
                     <a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
-                    <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a>
+                    <a href="#" class="btn-close"><i class="halflings-icon remove"></i></a> -->
                 </div>
             </div>
             
@@ -39,6 +39,7 @@
                             <th>Customer Number</th>
                             <th>Customer Phone</th>
                             <th>Total Amount</th>
+                            <th>Status</th>
                             <th>Actions</th>
                         </tr>
                     </thead>   
@@ -54,10 +55,10 @@
                             <td><?php echo $single_order->customer_phone?></td>
                             <td><?php echo $single_order->customer_email?></td>
                             <td><?php echo $this->cart->format_number($single_order->order_total)?> Pesos</td>
+                            <td><?php echo $single_order->actions?></td>
                             <td>
-                                <a class="btn btn-warning"><?php echo $single_order->actions?></a>
                                 <a class="btn btn-danger" href="<?php echo base_url('order/details/'.$single_order->order_id);?>">View</a>
-                                <a class="btn btn-success" href="<?php echo base_url('web/pdf/'.$single_order->order_id);?>">Download</a>
+                                <!-- <a class="btn btn-success" href="<?php echo base_url('web/pdf/'.$single_order->order_id);?>">Download</a> -->
                             </td>
                         </tr>
                         <?php }?>
